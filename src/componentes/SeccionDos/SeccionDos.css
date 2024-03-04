@@ -1,0 +1,83 @@
+.seccion-sofa {
+    position: relative;
+    /* Establece la posición relativa para permitir la superposición */
+    width: 100%;
+    margin-top: 7%;
+    height: 600px;
+    color: white;
+    margin-bottom: 0 !important;
+    /* Anula cualquier margen adicional */
+    
+
+
+}
+
+.seccion-sofa video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta el video para cubrir todo el contenedor */
+    object-fit: cover;
+    z-index: 1;
+    /* Asegura que el video esté sobre la capa oscura */
+
+
+}
+
+.seccion-sofa p {
+    position: absolute;
+    /* Establece la posición absoluta para superponer el texto */
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    z-index: 1;
+    /* Asegura que el texto esté sobre el video */
+}
+
+.seccion-sofa::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* Asegura que la capa esté detrás del video */
+    background-color: rgba(0, 0, 0, 0.7);
+     
+    
+}
+
+
+/* Estilo específico para dispositivos móviles (468px) */
+@media only screen and (max-width: 468px) {
+    .seccion-sofa {
+        height: 400px;
+        /* Ajusta la altura para dispositivos móviles */
+        margin-top: 3%;
+        /* Ajusta el margen superior */
+    }
+
+    .seccion-sofa p {
+        font-size: 20px;
+        /* Ajusta el tamaño del texto para dispositivos móviles */
+    }
+}
+
+/* Estilo específico para tabletas (768px) */
+@media only screen and (max-width: 768px) {
+    .seccion-sofa {
+        height: 500px;
+        /* Ajusta la altura para tabletas */
+        margin-top: 4%;
+        /* Ajusta el margen superior */
+    }
+
+    .seccion-sofa p {
+        font-size: 25px;
+        /* Ajusta el tamaño del texto para tabletas */
+    }
+}

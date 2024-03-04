@@ -1,0 +1,54 @@
+/*Seccion 5*/
+.project-section {
+    text-align: center;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    padding: 10px;
+    margin-top: 6%;
+  
+  }
+  
+  .subtitle h2 {
+    margin-bottom: 10px;
+    margin-top: 4%;
+  }
+  
+  .options-container {
+    width: 50%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 3%;
+  }
+  
+  .options-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .options-container li {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .options-container li .bullet {
+    position: absolute;
+    left: -20px;
+  }
+  
+  .options-container li .line {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: calc(100% + 40px);
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .line {
+    width: 100%;
+    border: 1px solid black;
+    display: block;
+    margin-bottom: 1%;
+  }
+  

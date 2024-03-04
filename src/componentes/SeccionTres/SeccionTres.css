@@ -1,0 +1,102 @@
+.section-images {
+    background-color: rgb(0, 0, 81);
+    /* Fondo azul para toda la sección */
+    width: 100%;
+    /* Asegura que la sección ocupe todo el ancho disponible */
+    display: flex;
+    /* Establece la sección como un contenedor flexible */
+    flex-direction: column;
+  
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a una nueva línea cuando no haya espacio */
+    
+  
+  
+  }
+  
+  .image-section {
+    display: flex;
+    color: white;
+    margin: auto;
+    align-items: flex-start;
+    /* Alinea los elementos al inicio del contenedor */
+    margin-top: 10%;
+    margin-left: 20%;
+  
+  
+  }
+  
+  .column {
+    display: flex;
+  
+  
+  }
+  
+  .image {
+    margin-bottom: 20px;
+  }
+  
+  .image img {
+    width: 300px;
+    height: 350px;
+  }
+  
+  .caption {
+    text-align: justify;
+  }
+  
+  .caption h3 {
+    margin: 10px 0;
+  }
+  
+  .caption p {
+    margin: 5px 0;
+  }
+  
+  .image2 {
+    margin-left: 21%;
+    margin-top: 30%;
+  }
+  
+  .div {
+    margin-bottom: 5%;
+  }
+  
+  /*QUERIES*/
+  /* Estilos para dispositivos móviles */
+  @media only screen and (max-width: 768px) {
+    .image-section {
+      justify-content: center;
+      /* Centra el contenido en dispositivos móviles */
+    }
+  
+    .column {
+      flex-direction: column;
+      /* Cambia la dirección a columna en dispositivos móviles */
+      align-items: center;
+      /* Centra los elementos en dispositivos móviles */
+    }
+  
+    .image img {
+      width: 80%;
+      /* Ajusta el ancho de las imágenes al ancho del contenedor en dispositivos móviles */
+      height: auto;
+      /* Permite que la altura de las imágenes se ajuste proporcionalmente */
+    }
+  
+    .image2 {
+      margin-left: 0;
+      /* Elimina el margen izquierdo en dispositivos móviles */
+      margin-top: 20px;
+      /* Reduce el margen superior en dispositivos móviles */
+    }
+  }
+  
+  /* Estilos para tabletas */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .image-section {
+      justify-content: center;
+      /* Centra el contenido en tabletas */
+    }
+  }
+  

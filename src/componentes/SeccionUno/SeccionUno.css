@@ -1,0 +1,142 @@
+/* Estilo de primera seccion */
+.section-images-one {
+    margin-right: 10%;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.box img {
+    width: 400px;
+    height: 250px;
+    margin-right: 5%;
+}
+
+.box,
+.box2 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.content h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Ajustes para el texto en la primera sección */
+.container-img .content {
+    text-align: justify;
+    /* Justifica el texto */
+    margin-top: 70px;
+    /* Ajusta el espacio arriba del texto */
+}
+
+
+
+.container-img .content h3,
+.container-img .content p {
+    text-align: justify;
+    /* Centra el texto */
+    text-align: center;
+    /* Centra el título */
+    margin-left: 27%;
+    /* Añade un margen a la izquierda */
+}
+
+/* Ajustes para el texto en la segunda sección */
+.container-img2 .content2 {
+    text-align: justify;
+    /* Justifica el texto */
+    margin-top: 50px;
+    /* Ajusta el espacio arriba del texto */
+
+}
+
+.container-img2 .content2 h3,
+.container-img2 .content2 p {
+    text-align: center;
+    /* Centra el título */
+    margin-left: 10%;
+    /* Añade un margen a la izquierda */
+}
+
+
+
+
+/*IMG 2*/
+.container-img2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.box2 img {
+    width: 400px;
+    height: 250px;
+    margin-left: 20%;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.content2 {
+    margin-right: 0%;
+}
+
+/* Media query para tablet (768px) y móvil (468px) */
+@media only screen and (max-width: 768px) {
+    .box,
+    .box2 {
+        flex-direction: column; /* Cambiar a formato de columna para tablet */
+        align-items: center; /* Centrar elementos en formato de columna */
+    }
+
+    .box img,
+    .box2 img {
+        width: 80%; /* Ancho completo para las imágenes en formato de columna */
+      
+        height: auto; /* Altura automática para mantener la proporción */
+        margin: 0; /* Quitar el margen de las imágenes para tablet y móvil */
+    }
+
+    .container-img .content,
+    .container-img2 .content2 {
+        text-align: justify; /* Centrar el texto para tablet y móvil */
+        margin-top: 20px; /* Ajustar el espacio arriba del texto para tablet y móvil */
+        margin-right: 18%;
+    }
+
+    .container-img .content h3,
+    .container-img .content p,
+    .container-img2 .content2 h3,
+    .container-img2 .content2 p {
+        margin-left: 0; /* Quitar el margen a la izquierda para tablet y móvil */
+    }
+    .container-img, .container-img2{
+        width: 80%;
+        margin-left: 23%;
+    }
+}
+
+/* Media query para móvil (468px) */
+@media only screen and (max-width: 468px) {
+    .container-img .content,
+    .container-img2 .content2 {
+        margin-top: 10px; /* Ajustar el espacio arriba del texto para móvil */
+    }
+
+    .content h3, p, .content2 h3, p{
+        font-size: 15px;
+    }
+}

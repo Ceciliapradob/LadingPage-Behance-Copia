@@ -1,0 +1,230 @@
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+header {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.7)),
+        url('../assets/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px 0;
+    height: 500px;
+
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 200px;
+    /* Altura del banner */
+    display: block;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Opacidad del 50% */
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.text h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.text p {
+    margin: 5px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logo {
+    color: white;
+}
+
+.menu-items {
+    display: flex;
+}
+
+.menu-items a {
+    color: white;
+    margin-left: 20px;
+    /* Espacio entre elementos del menú */
+    text-decoration: none;
+
+    position: relative;
+    /* Hace posible que se posicione la línea absolutamente */
+}
+
+.menu-items nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /* Posiciona la línea debajo del texto */
+    width: 100%;
+
+
+    height: 1px;
+    /* Grosor de la línea */
+    background-color: transparent;
+    transition: background-color 0.3s;
+    /* Transición suave para el cambio de color */
+}
+
+.menu-items nav:hover::after {
+    background-color: yellow;
+    /* Cambia el color de la línea al pasar el mouse */
+}
+
+.container {
+    margin-top: 15%;
+}
+
+/*ESTILO NUEVO*/
+nav {
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    padding: 10px 20px;
+    /* Margen tanto del lado izquierdo como del lado derecho */
+    position: relative;
+    margin-right: 10%;
+    margin-left: 6%;
+
+}
+
+nav::after {
+    content: "";
+    /* Añade un contenido vacío */
+    position: absolute;
+    /* Establece la posición absoluta para la línea */
+    bottom: 0;
+    /* Coloca la línea en la parte inferior del nav */
+    left: 15%;
+    /* Inicia la línea a partir del 10% del ancho del nav */
+    width: 70%;
+    /* Ancho de la línea en el 80% del nav */
+    height: 1px;
+    /* Grosor de la línea */
+    background-color: #ccc;
+    /* Color de la línea */
+}
+
+.logo {
+    position: relative;
+}
+
+.logo-text,
+.menu-items {
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    display: flex;
+
+}
+.menu-items.open {
+    display: flex;
+    flex-direction: column;
+  }
+  
+/*QUERIES*/
+/* Media query para tablet */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 400px;
+        /* Ajustar la altura del encabezado para tablet */
+    }
+
+    .text h2 {
+        font-size: 30px;
+        /* Tamaño de fuente más pequeño para tablet */
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        /* Reducir el padding del botón para tablet */
+    }
+
+    .menu-icon {
+        display: flex;
+        /* Mostrar el ícono de menú para tablet */
+    }
+
+    .menu-items {
+        display: none;
+        /* Ocultar los elementos del menú para tablet */
+    }
+
+    nav {
+        margin-right: 0;
+        /* Ajustar el margen derecho del nav para tablet */
+        margin-left: 0;
+        /* Ajustar el margen izquierdo del nav para tablet */
+    }
+
+    nav::after {
+        display: none;
+        /* Ocultar la línea después del nav para tablet */
+    }
+    .container{
+        margin: 22% 10%;
+    }
+}
+
+/* Media query para móvil */
+@media only screen and (max-width: 468px) {
+    header {
+        height: 300px;
+        /* Ajustar la altura del encabezado para móvil */
+    }
+
+    .text h2 {
+        font-size: 20px;
+        /* Tamaño de fuente más pequeño para móvil */
+    }
+
+    .cta-button {
+        padding: 6px 10px;
+        /* Reducir el padding del botón para móvil */
+    }
+}
